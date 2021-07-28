@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+@font-face {
+    font-family: digitalFont;
+    src: url(casiofont.ttf);
+}
+.container{
+    color: #14ff62;
+    display: flex;
+    justify-content: center;
+    margin-top: 10vh;
+}
+#clock{
+    border: 5px solid #14ff62;
+    width: 50%;
+}
+#time{
+    font-family: digitalFont;
+    font-size: 10vw;
+    text-align: center;
+}
+.samp{
+    text-align: justify;
+    font-size: 2vw;
+    padding: 5vw;
+}
