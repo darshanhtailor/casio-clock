@@ -8,6 +8,7 @@
     src: url(casiofont.ttf);
 }
 .container{
+    overflow: hidden;
     color: #14ff62;
     display: flex;
     justify-content: center;
@@ -15,38 +16,37 @@
 }
 #clock{
     border: 0.3vw solid #14ff62;
+    border-radius: 1vw;
     width: 50%;
 }
 #time{
     font-family: digitalFont;
-    font-size: 10vw;
+    font-size: 7vw;
     text-align: center;
 }
-.option{
-    display: flex;
-    font-family: 'Courier New', Courier, monospace;
-    margin: 1vh 1vw;
-    font-size: 1.5vw;
-    font-weight: bold;
-}
 #format{
-    margin-left: auto;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.2vw;
+    font-weight: bold;
+    float: right;
     margin-right: 2vw;
-    display: inline-flex;
     border: 0.2vw solid #14ff62;
-    padding: 1%;
-    border-radius: 5vh;
+    border-radius: 0.5vw;
 }
 #f12{
     display: inline-block;
-    padding: 0 0.5vw 0 0;
-    border-right: 0.2vw solid #14ff62;
-    height: 100%;
+    padding: 0.5vh 0.5vw;
+    border: 0vw solid #14ff62;
+    border-radius: 0.4vw;
+    margin-right: -0.5vw;
 }
 #f24{
     display: inline-block;
-    padding: 0 0 0 0.5vw;
-    height: 100%; 
+    padding: 0.5vh 0.5vw;
+    border: 0vw solid #14ff62;
+    border-radius: 0.4vw;
+    background-color: #14ff62;
+    color: black;
 }
 #f12:hover{
     cursor: pointer;

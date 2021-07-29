@@ -5,7 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="casiocss.css">
-    <script src="casiojs.js"></script>
     <title>Casio Digital Clock</title>
 </head>
 <body>
@@ -14,16 +13,16 @@
             <div id="time">
                 &#160;
             </div>
-            <div class="option">
-                <div id="format">
-                    <div id="f12">12H</div>
-                    <div id="f24">24H</div>
-                </div>
+            <div id="format">
+                <div id="f12" onclick="selectForm(this.id)">12H</div>
+                <div id="f24" onclick="selectForm(this.id)">24H</div>
             </div>
+            
             <div class="samp">
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur molestiae esse illum aperiam pariatur soluta sapiente cum veritatis ducimus explicabo rem, sequi, sunt eum repellat ut, velit inventore recusandae dolor natus? Atque, quis? Itaque ad quia recusandae, facilis consequatur corporis excepturi incidunt porro cum harum deleniti! Amet optio nisi tempora.
             </div>
         </div>
     </div>
 </body>
+<script src="casiojs.js"></script>
 </html>
