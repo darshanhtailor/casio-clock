@@ -14,13 +14,45 @@
     margin-top: 10vh;
 }
 #clock{
-    border: 5px solid #14ff62;
+    border: 0.3vw solid #14ff62;
     width: 50%;
 }
 #time{
     font-family: digitalFont;
     font-size: 10vw;
     text-align: center;
+}
+.option{
+    display: flex;
+    font-family: 'Courier New', Courier, monospace;
+    margin: 1vh 1vw;
+    font-size: 1.5vw;
+    font-weight: bold;
+}
+#format{
+    margin-left: auto;
+    margin-right: 2vw;
+    display: inline-flex;
+    border: 0.2vw solid #14ff62;
+    padding: 1%;
+    border-radius: 5vh;
+}
+#f12{
+    display: inline-block;
+    padding: 0 0.5vw 0 0;
+    border-right: 0.2vw solid #14ff62;
+    height: 100%;
+}
+#f24{
+    display: inline-block;
+    padding: 0 0 0 0.5vw;
+    height: 100%; 
+}
+#f12:hover{
+    cursor: pointer;
+}
+#f24:hover{
+    cursor: pointer;
 }
 .samp{
     text-align: justify;
