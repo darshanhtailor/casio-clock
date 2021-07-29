@@ -14,6 +14,19 @@ function giveTime(f) {
         document.getElementById("time").innerHTML = str;
     }
 }
+
+function retDay(a){
+    if(a == 0) return "Sun";
+    else if(a == 1) return "Mon";
+    else if(a == 2) return "Tue";
+    else if(a == 3) return "Wed";
+    else if(a == 4) return "Thu";
+    else if(a == 5) return "Fri";
+    else if(a == 6) return "Sat";
+}
+let b = new Date();
+let strD = retDay(b.getDay()) + ` ${b.getDate()}/${b.getMonth()+1}/${b.getFullYear()}`;
+document.getElementById("daydate").innerHTML = strD;
 giveTime(24);
 run = setInterval(giveTime, 1000, 24);
 
