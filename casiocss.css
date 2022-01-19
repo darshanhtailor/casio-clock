@@ -19,6 +19,7 @@
 #time{
     font-family: digitalFont;
     font-size: 150px;
+    text-align: center;
 }
 #daydate{
     font-family: sans-serif;
