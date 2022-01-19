@@ -42,17 +42,19 @@ let b = new Date();
 let strD = retDay(b.getDay()) + ` ${twoDigs(b.getDate())}/${twoDigs(b.getMonth()+1)}/${b.getFullYear()}`;
 daydate.innerHTML = strD;
 giveTime(24);
-let run = setInterval(giveTime, 1000, 24);
+let run = setInterval(giveTime, 1000, 24), curr = 24;
 
 checkBox.addEventListener('change', ()=>{
-    if(this.checked){
+    if(curr == 24){
+        clearInterval(run)
+        curr = 12
         giveTime(12);
         run = setInterval(giveTime, 1000, 12);
-        console.log('checked')
     }
     else{
+        clearInterval(run)
+        curr = 24
         giveTime(24);
         run = setInterval(giveTime, 1000, 24);
-        console.log('uncheck')
     }
 })
