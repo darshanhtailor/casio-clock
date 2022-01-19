@@ -19,6 +19,8 @@
 #time{
     font-family: digitalFont;
     font-size: 150px;
+    line-height: 125px;
+    /* width: 20px; */
     text-align: center;
 }
 #daydate{
