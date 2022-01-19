@@ -47,12 +47,18 @@ let run = setInterval(giveTime, 1000, 24), curr = 24;
 checkBox.addEventListener('change', ()=>{
     if(curr == 24){
         clearInterval(run)
+        if(innerWidth <= 768){
+            time.style.fontSize = '60px'
+        }
         curr = 12
         giveTime(12);
         run = setInterval(giveTime, 1000, 12);
     }
     else{
         clearInterval(run)
+        if(innerWidth <= 768){
+            time.style.fontSize = '75x'
+        }
         curr = 24
         giveTime(24);
         run = setInterval(giveTime, 1000, 24);
